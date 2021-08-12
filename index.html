@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MacOutlet</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <div class="top">
+                <div class="name">
+                    <img src="img/name/image 1.svg" alt="MacOutlet">
+                </div>
+                <div class="cart">
+                    <img src="img/icons/cart.svg" alt="cart" class="cart-icon">
+                    <div class="number">0</div>
+                </div>
+                <div class="cart-opened">
+                    <div class="cart-header">
+                        <h2>Shopping Cart</h2>
+                        <p>Checkout is almost done!</p>
+                    </div>
+                    <div class="products-wrapper"></div>                
+                    <div class="totals">
+                        <div class="total-amount">
+                            <p>Total amount: <span>0 ptc</span></p>
+                        </div>
+                        <div class="total-price">
+                            <p>Total price: <span>0$</span></p>
+                        </div>
+                    </div>
+                    <div class="complete-button">
+                        <button>Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="slider"></div>
+        </header>
+        <main>
+            <div class="search-container">
+                <div class="search-icon-wrapper">
+                    <img src="img/icons/search.svg" alt="search" class="search-icon">
+                </div>
+                <input type="text" class="search" placeholder="Enter device name...">
+                <div class="filter-icon-wrapper">
+                    <img src="img/icons/filter.svg" alt="filter" class="filter-icon">
+                </div>
+                <div class="sort-icon-wrapper">
+                    <img src="img/icons/sort.svg" alt="sort" class="sort-icon">
+                </div>
+            </div>
+            <div class="main-wrapper">
+                <div class="accordion-filter">
+                    <div class="section-wrapper">
+                        <button class="accordion">Price</button>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="panel">
+                        <div class="from-wrapper">
+                            <p>From</p>
+                            <input type="number" class="from">
+                        </div>
+                        <div class="to-wrapper">
+                            <p>To</p>
+                            <input type="number" class="to">
+                        </div>
+                    </div>
+
+                    <div class="section-wrapper">
+                        <button class="accordion">Color</button>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="panel">
+                        <div class="color-panel-wrapper"></div>
+                    </div>
+
+                    <div class="section-wrapper">
+                        <button class="accordion">Memory</button>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="panel">
+                        <div class="memory-panel-wrapper"></div>
+                    </div>
+
+                    <div class="section-wrapper">
+                        <button class="accordion">OS</button>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="panel os-panel">
+                    </div>
+
+                    <div class="section-wrapper">
+                        <button class="accordion filter-display">Display</button>
+                        <div class="arrow"></div>
+                    </div>
+                    <div class="panel panel-filter-display">
+                    </div>
+
+                </div>
+                <div class="item-list">
+                </div>   
+            </div>
+            <div class="back-shadow">
+            </div>
+        </main>
+        <footer></footer>
+    </div>
+    <script src="js/items.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/slick-ini.js"></script>
+</body>
+</html>
